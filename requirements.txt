@@ -1,0 +1,4 @@
+# No Python runtime dependencies yet.
+# This project is primarily a static site (GitHub Pages).
+# Add packages here if/when helper scripts (e.g. data scraping, itinerary
+# generation) are added, then: pip install -r requirements.txt
