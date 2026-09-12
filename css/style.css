@@ -353,6 +353,17 @@ th { color: var(--text-muted); font-weight: 700; }
 .car-card .car-body { padding: 14px 16px 6px; display: flex; flex-direction: column; gap: 6px; }
 .car-card h3 { margin: 0; font-size: 1rem; }
 .car-card .spec { font-size: 0.85rem; color: var(--text-muted); margin: 0; }
+.car-card .gallery-links { display: flex; flex-wrap: wrap; gap: 6px; padding: 2px 16px 10px; }
+.car-card .gallery-links a {
+  font-size: 0.76rem;
+  font-weight: 700;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  border-radius: 999px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+.car-card .gallery-links a:hover { text-decoration: none; background: var(--accent); color: #fff; }
 .car-card .credit { font-size: 0.68rem; color: var(--text-muted); padding: 0 16px 12px; margin: 0; }
 .car-card.not-preferred { opacity: 0.85; }
 
