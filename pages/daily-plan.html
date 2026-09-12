@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daily Plan — USA Trip</title>
+  <meta name="description" content="Day-by-day schedule: dates, where we sleep, and the basic timeline for the USA trip." />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
@@ -23,15 +24,110 @@
   <section class="page-hero wrap">
     <div class="breadcrumb"><a href="../index.html">Home</a> / Daily Plan</div>
     <h1>🗓️ Daily Plan</h1>
-    <p class="lede">Day-by-day itinerary — cities, stops, driving legs, and what we're doing each day. Not built yet; will fill in once dates and route are locked.</p>
+    <p class="lede">
+      The main schedule: what day we're on, where we sleep each night, and
+      the basic timeline. This is a draft skeleton with sample rows — it
+      gets replaced with the real itinerary once synced from the trip notes
+      doc.
+    </p>
   </section>
 
   <main class="wrap">
-    <div class="placeholder-note">
-      This page is a placeholder. Once the route and dates from the trip
-      notes doc / map are settled, this becomes a day-by-day table
-      (Day, Date, From → To, Drive time, Stops, Overnight).
+
+    <div class="callout todo">
+      <strong>Draft data below is a placeholder.</strong> Real dates, cities,
+      and overnight stops will replace it once <code>docs/source-trip-notes.txt</code>
+      (exported from the trip notes doc) is dropped into the repo — see the
+      ground-truth workflow in <code>CLAUDE.md</code>.
     </div>
+
+    <section class="panel" id="overview">
+      <h2>Trip overview</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Field</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr><td>Total days</td><td><em>TBD</em></td></tr>
+            <tr><td>Start date / city</td><td><em>TBD</em></td></tr>
+            <tr><td>End date / city</td><td><em>TBD</em></td></tr>
+            <tr><td>Group size</td><td><em>TBD</em></td></tr>
+            <tr><td>Rental car pickup / drop-off</td><td><em>TBD</em> — see <a href="car-rental.html">Car Rental</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="schedule">
+      <h2>Main schedule — where we sleep each night</h2>
+      <p class="section-sub">One row per night. This is the backbone of the trip: everything else (driving legs, activities) hangs off this.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Date</th>
+              <th>City / Area</th>
+              <th>Sleeping in</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><em>TBD</em></td>
+              <td>Sample City, ST</td>
+              <td>Sample Hotel</td>
+              <td>Arrival day — example placeholder row</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><em>TBD</em></td>
+              <td>Sample City, ST</td>
+              <td>Sample Hotel</td>
+              <td>Example placeholder row</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><em>TBD</em></td>
+              <td>Next City, ST</td>
+              <td>Sample Motel</td>
+              <td>Driving day — example placeholder row</td>
+            </tr>
+            <tr>
+              <td>…</td>
+              <td>…</td>
+              <td>…</td>
+              <td>…</td>
+              <td>Rows continue for every night of the trip</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="timeline">
+      <h2>Basic daily timeline</h2>
+      <p class="section-sub">A rough shape for a typical day — real per-day detail (activities, reservations, drive times) gets added once the schedule above is final.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Time</th><th>What</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><em>Morning</em></td><td>Breakfast / check out (on travel days) / first activity</td></tr>
+            <tr><td><em>Midday</em></td><td>Drive leg or main activity / lunch stop</td></tr>
+            <tr><td><em>Afternoon</em></td><td>Second activity / sightseeing / check in to next stay</td></tr>
+            <tr><td><em>Evening</em></td><td>Dinner / rest</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout">
+        Once real days are added, each day can get its own detailed timeline
+        (specific times, addresses, reservation confirmations) either inline
+        here or split into per-day sections if the list gets long.
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">

@@ -4,8 +4,8 @@ Static site (HTML/CSS, no build step) collecting everything for a United
 States trip: daily plan, navigation/logistics, and topic research pages
 (car rental first). Hosted on **GitHub Pages** from this repo.
 
-- **GitHub repo (remote `origin`)**: https://github.com/avisalmon/arhab.git
-- **GitHub Pages URL**: https://avisalmon.github.io/arhab/ (branch `main`, root)
+- **GitHub repo (remote `origin`)**: <https://github.com/avisalmon/arhab.git>
+- **GitHub Pages URL**: <https://avisalmon.github.io/arhab/> (branch `main`, root)
 - This session/repo is the single source of truth — always commit and
   **push to `origin main`** after making changes here, so the user can see
   updates and set/adjust GitHub Pages on their end.
@@ -42,10 +42,28 @@ editing a page:
 
 ## Live external sources (not in this repo, require Google sign-in)
 
-- Trip notes doc: https://docs.google.com/document/d/1BXR2ipfOO5Q0voExCE4PzTYwg4jrBsk3/edit?pli=1
-- Trip Google My Map: https://www.google.com/maps/d/u/0/edit?mid=1WM9u-u5MO-tDHtt3ySLaDUeo9hJZDwA
-- These can't be fetched automatically (auth-gated) — content gets pulled in
-  manually/pasted from there into the relevant page as details firm up.
+- Trip notes doc: <https://docs.google.com/document/d/1BXR2ipfOO5Q0voExCE4PzTYwg4jrBsk3/edit?pli=1>
+- Trip Google My Map: <https://www.google.com/maps/d/u/0/edit?mid=1WM9u-u5MO-tDHtt3ySLaDUeo9hJZDwA>
+- **Neither is fetchable automatically** — confirmed 401 Unauthorized on the
+  view, `/export?format=txt`, and `/pub` endpoints, and no Google Docs/Drive
+  MCP connector is available in this environment (only Gmail is connected).
+  Do not re-attempt auto-fetching these; use the ground-truth workflow below.
+
+### Ground-truth sync workflow (the trip notes doc is source of truth)
+
+Avi's Google Doc is the group's ground truth for trip details (group size,
+route, dates, sleeping arrangements, etc.). Since it can't be pulled live:
+
+1. Avi exports it from Google Docs: **File → Download → Plain text (.txt)**
+   (or .docx/.html).
+2. He drops it in this repo at **`docs/source-trip-notes.txt`** (overwriting
+   the previous export when the doc changes).
+3. Read that file directly and use it to update the relevant site pages
+   (Daily Plan, Navigation, Car Rental, etc.) — treat it as the authoritative
+   source over anything already written on the pages.
+4. If `docs/source-trip-notes.txt` looks stale (site pages reference details
+   not in it, or Avi mentions the doc changed), ask him to re-export it
+   rather than guessing or re-attempting a live fetch.
 
 ## Python standing rules (from global CLAUDE.md, apply if any scripts are added)
 
