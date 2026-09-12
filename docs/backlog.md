@@ -16,6 +16,10 @@
 ## Open decisions
 - [ ] NYC Sep 20: keep Downtown/Brooklyn day, or swap for Packers @ Jets NFL
       game? See `docs/nyc-proposals.md` — pending family decision.
+- [ ] Car rental: Premium SUV (Suburban/Yukon XL/Expedition MAX) vs a
+      cheaper minivan fallback; which company/channel to book through; CDW
+      vs third-party excess insurance. See `pages/car-rental.html` — pending
+      family decision, then get real quotes for the actual dates.
 
 ## Next
 - [ ] Once source file lands: replace Daily Plan sample rows with the real
