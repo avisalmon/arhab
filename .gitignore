@@ -20,3 +20,6 @@ desktop.ini
 # Logs / temp
 *.log
 *.tmp
+
+# Playwright browser-automation scratch output (page snapshots, debug dumps)
+.playwright-cli/
