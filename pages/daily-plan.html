@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daily Plan — USA Trip</title>
-  <meta name="description" content="Day-by-day schedule: dates, where we sleep, and the basic timeline for the USA trip." />
+  <meta name="description" content="Day-by-day schedule: dates, where we sleep, and the full timeline for the USA trip." />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
@@ -25,21 +25,41 @@
     <div class="breadcrumb"><a href="../index.html">Home</a> / Daily Plan</div>
     <h1>🗓️ Daily Plan</h1>
     <p class="lede">
-      The main schedule: what day we're on, where we sleep each night, and
-      the basic timeline. This is a draft skeleton with sample rows — it
-      gets replaced with the real itinerary once synced from the trip notes
-      doc.
+      15 days, Sept 18 – Oct 2, 2026. Translated and organized from the
+      family's trip notes doc (<a href="https://github.com/avisalmon/arhab/blob/main/docs/source-trip-notes.md" target="_blank" rel="noopener">source-trip-notes.md</a>) —
+      every item there is marked <span class="tag">Plan</span>. Newer ideas
+      from the <a href="https://github.com/avisalmon/arhab/blob/main/docs/nyc-proposals.md" target="_blank" rel="noopener">NYC candidate list</a> that
+      aren't decided yet are marked <span class="tag warn">Optional</span>.
+      Every place is linked to a real site so you can check hours/tickets
+      before we go.
     </p>
   </section>
 
   <main class="wrap">
 
-    <div class="callout todo">
-      <strong>Draft data below is a placeholder.</strong> Real dates, cities,
-      and overnight stops will replace it once <code>docs/source-trip-notes.txt</code>
-      (exported from the trip notes doc) is dropped into the repo — see the
-      ground-truth workflow in <code>CLAUDE.md</code>.
+    <div class="legend">
+      <span><span class="tag">Plan</span> — in the family's ground-truth doc</span>
+      <span><span class="tag warn">Optional</span> — new idea, not decided</span>
     </div>
+
+    <nav class="jumpnav">
+      <a href="#overview">Overview</a>
+      <a href="#sleeping">Where we sleep</a>
+      <a href="#day1">Day 1</a>
+      <a href="#day2">Day 2</a>
+      <a href="#day3">Day 3</a>
+      <a href="#day4">Day 4</a>
+      <a href="#day5">Day 5</a>
+      <a href="#day6">Day 6</a>
+      <a href="#day7">Day 7</a>
+      <a href="#day8">Day 8</a>
+      <a href="#day9">Day 9</a>
+      <a href="#day10">Day 10</a>
+      <a href="#day11">Day 11</a>
+      <a href="#day12-13">Day 12-13</a>
+      <a href="#day14-15">Day 14-15</a>
+      <a href="#optional">Optional NYC ideas</a>
+    </nav>
 
     <section class="panel" id="overview">
       <h2>Trip overview</h2>
@@ -47,84 +67,265 @@
         <table>
           <thead><tr><th>Field</th><th>Value</th></tr></thead>
           <tbody>
-            <tr><td>Total days</td><td><em>TBD</em></td></tr>
-            <tr><td>Start date / city</td><td><em>TBD</em></td></tr>
-            <tr><td>End date / city</td><td><em>TBD</em></td></tr>
-            <tr><td>Group size</td><td><em>TBD</em></td></tr>
-            <tr><td>Rental car pickup / drop-off</td><td><em>TBD</em> — see <a href="car-rental.html">Car Rental</a></td></tr>
+            <tr><td>Dates</td><td>Fri Sep 18 – Fri Oct 2, 2026 (15 days)</td></tr>
+            <tr><td>Group</td><td>Nirit, Avi + the boys (family of 5)</td></tr>
+            <tr><td>Outbound flight</td><td>UA85 — departs (origin) ~11:00, lands Newark (EWR) ~15:50, Fri Sep 18</td></tr>
+            <tr><td>Return flight</td><td>UA84 — departs EWR 15:25 Thu Oct 1, lands Tel Aviv (TLV) 8:55 Fri Oct 2</td></tr>
+            <tr><td>Route</td><td>NYC → Finger Lakes → Niagara Falls (Canada side) → Lancaster/Amish → Washington DC → Philadelphia → Atlantic City → New Jersey → home</td></tr>
+            <tr><td>Rental car</td><td>Picked up Day 5 (Sep 22) on Manhattan's West Side — see <a href="car-rental.html">Car Rental</a></td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section class="panel" id="schedule">
-      <h2>Main schedule — where we sleep each night</h2>
-      <p class="section-sub">One row per night. This is the backbone of the trip: everything else (driving legs, activities) hangs off this.</p>
+    <section class="panel" id="sleeping">
+      <h2>Where we sleep, night by night</h2>
       <div class="table-wrap">
         <table>
-          <thead>
-            <tr>
-              <th>Day</th>
-              <th>Date</th>
-              <th>City / Area</th>
-              <th>Sleeping in</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
+          <thead><tr><th>Day</th><th>Date</th><th>City / Area</th><th>Sleeping in</th></tr></thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td><em>TBD</em></td>
-              <td>Sample City, ST</td>
-              <td>Sample Hotel</td>
-              <td>Arrival day — example placeholder row</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td><em>TBD</em></td>
-              <td>Sample City, ST</td>
-              <td>Sample Hotel</td>
-              <td>Example placeholder row</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td><em>TBD</em></td>
-              <td>Next City, ST</td>
-              <td>Sample Motel</td>
-              <td>Driving day — example placeholder row</td>
-            </tr>
-            <tr>
-              <td>…</td>
-              <td>…</td>
-              <td>…</td>
-              <td>…</td>
-              <td>Rows continue for every night of the trip</td>
-            </tr>
+            <tr><td>1–4</td><td>Sep 18–22</td><td>Manhattan, NYC</td><td>Delta Hotels Times Square (4 nights)</td></tr>
+            <tr><td>5</td><td>Sep 22</td><td>Geneva, NY (Finger Lakes)</td><td>1 night</td></tr>
+            <tr><td>6</td><td>Sep 23</td><td>Niagara Falls, Canadian side</td><td>1 night</td></tr>
+            <tr><td>7</td><td>Sep 24</td><td>Lancaster, PA</td><td>1 night</td></tr>
+            <tr><td>8–9</td><td>Sep 25–26</td><td>Washington, DC</td><td>2 nights</td></tr>
+            <tr><td>10–11</td><td>Sep 27–28</td><td>Atlantic City, NJ</td><td>2 nights</td></tr>
+            <tr><td>12–13</td><td>Sep 29–30</td><td>New Jersey (Meadowlands/Secaucus area)</td><td>2 nights</td></tr>
+            <tr><td>14</td><td>Oct 1</td><td>In flight — EWR → TLV (UA84)</td><td>—</td></tr>
+            <tr><td>15</td><td>Oct 2</td><td>Arrive Tel Aviv 8:55</td><td>Trip ends</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section class="panel" id="timeline">
-      <h2>Basic daily timeline</h2>
-      <p class="section-sub">A rough shape for a typical day — real per-day detail (activities, reservations, drive times) gets added once the schedule above is final.</p>
+    <!-- ============ DAY 1 ============ -->
+    <details class="panel" id="day1" open>
+      <summary><span class="day-title">Day 1 — Fri Sep 18 · Arrival, NYC</span><span class="day-sub">Sleeping: Delta Hotels Times Square</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">15:50</span><span class="desc"><span class="tag">Plan</span> Land <a href="https://www.newarkairport.com/" target="_blank" rel="noopener">Newark Liberty (EWR)</a>, UA85.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Transfer to Manhattan: no fixed taxi/Uber price (traffic + tunnel tolls, easily $100–130); <a href="https://www.njtransit.com/" target="_blank" rel="noopener">NJ Transit</a> train direct to Penn Station, ~30–40 min, ~$18/person (~$90 for 5).</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Check in: <a href="https://www.marriott.com/en-us/hotels/nycdt-delta-hotels-new-york-times-square/overview/" target="_blank" rel="noopener">Delta Hotels Times Square</a>.</span></li>
+          <li><span class="time">20:00</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.timessquarenyc.org/" target="_blank" rel="noopener">Times Square</a> (7 min walk) → Broadway → <a href="https://www.msg.com/radio-city-music-hall" target="_blank" rel="noopener">Radio City Music Hall</a> → <a href="https://www.rockefellercenter.com/" target="_blank" rel="noopener">Rockefeller Center</a> → back through Times Square once the lights are on.</span></li>
+          <li><span class="time">Evening</span><span class="desc"><span class="tag">Plan</span> Dinner in <a href="https://en.wikipedia.org/wiki/Hell%27s_Kitchen,_Manhattan" target="_blank" rel="noopener">Hell's Kitchen</a>.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 2 ============ -->
+    <details class="panel" id="day2">
+      <summary><span class="day-title">Day 2 — Sat Sep 19 · Central Park, 5th Ave, Broadway</span><span class="day-sub">Sleeping: Delta Hotels Times Square</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">8:30</span><span class="desc"><span class="tag">Plan</span> Breakfast.</span></li>
+          <li><span class="time">Morning</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.centralparknyc.org/" target="_blank" rel="noopener">Central Park</a>: Columbus Circle → The Mall → <a href="https://www.centralparknyc.org/locations/bethesda-terrace" target="_blank" rel="noopener">Bethesda Terrace &amp; Fountain</a> → the lake → <a href="https://www.centralparknyc.org/locations/bow-bridge" target="_blank" rel="noopener">Bow Bridge</a> → <a href="https://www.centralparknyc.org/locations/strawberry-fields" target="_blank" rel="noopener">Strawberry Fields</a> (John Lennon memorial).</span></li>
+          <li><span class="time">12:30</span><span class="desc"><span class="tag">Plan</span> Down <a href="https://en.wikipedia.org/wiki/Fifth_Avenue" target="_blank" rel="noopener">Fifth Avenue</a>: <a href="https://www.apple.com/retail/fifthavenue/" target="_blank" rel="noopener">Apple Fifth Avenue</a>, the LEGO Store, <a href="https://www.saintpatrickscathedral.org/" target="_blank" rel="noopener">St. Patrick's Cathedral</a>, Rockefeller Center.</span></li>
+          <li><span class="time">15:30</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.rockefellercenter.com/tickets/top-of-the-rock-observation-deck/" target="_blank" rel="noopener">Top of the Rock</a> — book the time slot ahead, ~$42, cheaper online.</span></li>
+          <li><span class="time">18:30</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.grandcentralterminal.com/" target="_blank" rel="noopener">Grand Central Terminal</a> — the historic hall and painted ceiling.</span></li>
+          <li><span class="time">Evening</span><span class="desc"><span class="tag">Plan</span> Broadway musical (Theater District, walking distance from the hotel). Check the daily <a href="https://lottery.broadwaydirect.com/" target="_blank" rel="noopener">Broadway lottery</a> (results ~noon for a 9am entry) and rush apps like <a href="https://www.todaytix.com/" target="_blank" rel="noopener">TodayTix</a> — the family got up to 50% off this way.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 3 ============ -->
+    <details class="panel" id="day3">
+      <summary><span class="day-title">Day 3 — Sun Sep 20 · Downtown &amp; Brooklyn <em>or</em> NFL</span><span class="day-sub">Sleeping: Delta Hotels Times Square</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <div class="callout todo">
+          <strong>🟡 Open decision:</strong> keep the Downtown/Brooklyn plan
+          below, or swap the day for <span class="tag warn">Optional</span>
+          <a href="https://www.nfl.com/schedules/2026/by-team/new-york-jets" target="_blank" rel="noopener">Packers @ Jets</a> —
+          confirmed real: Sun Sep 20, 1:00pm, MetLife Stadium (Jets' home
+          opener). See <a href="https://github.com/avisalmon/arhab/blob/main/docs/nyc-proposals.md" target="_blank" rel="noopener">nyc-proposals.md</a>.
+        </div>
+        <ul class="timeline-list">
+          <li><span class="time">9:00</span><span class="desc"><span class="tag">Plan</span> Subway to <a href="https://www.911memorial.org/" target="_blank" rel="noopener">9/11 Memorial &amp; Museum</a> and the <a href="https://www.westfield.com/united-states/westfieldworldtradecenter" target="_blank" rel="noopener">Oculus</a> → short walk to Wall Street and the <a href="https://en.wikipedia.org/wiki/Charging_Bull" target="_blank" rel="noopener">Charging Bull</a>.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Walk south to <a href="https://www.thebattery.org/" target="_blank" rel="noopener">Battery Park</a>.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Either the free <a href="https://www.siferry.com/" target="_blank" rel="noopener">Staten Island Ferry</a> (passes the Statue of Liberty, ~25 min each way) or <a href="https://www.statuecitycruises.com/en-us/" target="_blank" rel="noopener">Statue City Cruises</a> to Liberty Island (~$26, incl. museum + audio tour, option to continue to Ellis Island — book ahead).</span></li>
+          <li><span class="time">13:00</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.ferry.nyc/" target="_blank" rel="noopener">NYC Ferry</a> from Battery Park/Pier 11 to DUMBO, Brooklyn (~$4/person). Lunch at <a href="https://www.timeoutmarket.com/newyork/" target="_blank" rel="noopener">Time Out Market</a>. Walk <a href="https://www.brooklynbridgepark.org/" target="_blank" rel="noopener">Brooklyn Bridge Park</a> and the famous Manhattan Bridge photo spot.</span></li>
+          <li><span class="time">17:15–19:15</span><span class="desc"><span class="tag">Plan</span> Walk the <a href="https://en.wikipedia.org/wiki/Brooklyn_Bridge" target="_blank" rel="noopener">Brooklyn Bridge</a> back to Manhattan for golden hour / lights coming on (~1.8km, easy grade).</span></li>
+          <li><span class="time">Evening</span><span class="desc"><span class="tag">Plan</span> Dinner in <a href="https://en.wikipedia.org/wiki/Chinatown,_Manhattan" target="_blank" rel="noopener">Chinatown</a> or <a href="https://en.wikipedia.org/wiki/SoHo,_Manhattan" target="_blank" rel="noopener">SoHo</a>.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 4 ============ -->
+    <details class="panel" id="day4">
+      <summary><span class="day-title">Day 4 — Mon Sep 21 · Hudson Yards, High Line, West Village</span><span class="day-sub">Sleeping: Delta Hotels Times Square</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">9:00</span><span class="desc"><span class="tag">Plan</span> Walk (15 min) to <a href="https://www.hudsonyardsnewyork.com/" target="_blank" rel="noopener">Hudson Yards</a> — the Vessel and the riverfront skyscrapers. If Top of the Rock was skipped, consider <a href="https://www.edgenyc.com/" target="_blank" rel="noopener">Edge</a> observation deck instead (~1.5 hrs).</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Walk the <a href="https://www.thehighline.org/" target="_blank" rel="noopener">High Line</a> south (~2km) through gardens, art, and views over the streets and river.</span></li>
+          <li><span class="time">Lunch</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.chelseamarket.com/" target="_blank" rel="noopener">Chelsea Market</a>, or rooftop food at <a href="https://www.pier57ny.com/" target="_blank" rel="noopener">Pier 57</a>.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> <a href="https://littleisland.org/" target="_blank" rel="noopener">Little Island</a> floating park; short walk through the cobblestones of the Meatpacking District.</span></li>
+          <li><span class="time">15:00</span><span class="desc"><span class="tag">Plan</span> <a href="https://en.wikipedia.org/wiki/Greenwich_Village" target="_blank" rel="noopener">Greenwich Village</a>: the flagship <a href="https://www.harrypotterstore.com/" target="_blank" rel="noopener">Harry Potter Store</a> near the Flatiron Building, the "Friends" building photo op on <a href="https://en.wikipedia.org/wiki/Bedford_Street_(Manhattan)" target="_blank" rel="noopener">Bedford Street</a>, Bleecker Street, <a href="https://www.nycgovparks.org/parks/washington-square-park" target="_blank" rel="noopener">Washington Square Park</a>.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> <a href="https://en.wikipedia.org/wiki/SoHo,_Manhattan" target="_blank" rel="noopener">SoHo</a> — cast-iron architecture, shopping.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag warn">Optional</span> <a href="https://www.moma.org/" target="_blank" rel="noopener">MoMA</a> instead of part of this day.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 5 ============ -->
+    <details class="panel" id="day5">
+      <summary><span class="day-title">Day 5 — Tue Sep 22 · Finger Lakes</span><span class="day-sub">Sleeping: Geneva, NY</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">Morning</span><span class="desc"><span class="tag">Plan</span> Pick up rental car — West Side Manhattan, near W 40th St, close to the Lincoln Tunnel. See <a href="car-rental.html">Car Rental</a> for the full checklist (E‑ZPass/toll pass, unlimited mileage, one-way return, Canada border coverage).</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Drive ~4–4.5 hrs / ~400km. Suggested stretch stop (~2 hrs in) around Stroudsburg / Delaware Water Gap or Binghamton.</span></li>
+          <li><span class="time">14:00</span><span class="desc"><span class="tag">Plan</span> <a href="https://parks.ny.gov/parks/watkinsglen/" target="_blank" rel="noopener">Watkins Glen State Park</a> — the Gorge Trail past 19 waterfalls (1.6 mi, ~2 hrs incl. photo stops). Hiking shoes; keep the parking receipt, it's valid at other Finger Lakes parks. Shuttle only runs weekends after Sep 8.</span></li>
+          <li><span class="time">~16:00</span><span class="desc"><span class="tag">Plan</span> Drive along <a href="https://www.fingerlakes.org/attractions/seneca-lake/" target="_blank" rel="noopener">Seneca Lake</a>, Route 14 (~25 min with scenic stops).</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 6 ============ -->
+    <details class="panel" id="day6">
+      <summary><span class="day-title">Day 6 — Wed Sep 23 · Niagara Falls</span><span class="day-sub">Sleeping: Canadian side</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Drive ~2.5 hrs to Niagara Falls.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.niagarafallsstatepark.com/" target="_blank" rel="noopener">Niagara Falls State Park</a> (US side) — bring a change of socks/shoes, you will get soaked.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.niagarafallsstatepark.com/things-to-do/cave-of-the-winds" target="_blank" rel="noopener">Cave of the Winds</a> — $23/person, includes a poncho; buy at the park, timed elevator entry.</span></li>
+          <li><span class="time">9:00–17:00</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.maidofthemist.com/" target="_blank" rel="noopener">Maid of the Mist</a> boat to the base of the falls — $30.25/person, no fixed time slot (boats every 15 min); buy a few days ahead to skip the line.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Cross Rainbow Bridge to the Canadian side, check in.</span></li>
+          <li><span class="time">Evening</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.niagaraparks.com/" target="_blank" rel="noopener">Niagara Parkway</a> — panoramic view of all three falls; <a href="https://www.cliftonhill.com/" target="_blank" rel="noopener">Clifton Hill</a> lights and attractions; falls illuminated at night + fireworks. Bring Canadian dollars — USD is accepted but at a poor rate, no change given in USD.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 7 ============ -->
+    <details class="panel" id="day7">
+      <summary><span class="day-title">Day 7 — Thu Sep 24 · Pennsylvania</span><span class="day-sub">Sleeping: Lancaster, PA</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">9:00</span><span class="desc"><span class="tag">Plan</span> Drive Niagara → Lancaster County (~6–6.5 hrs); leg-stretch stop after ~3.5 hrs.</span></li>
+          <li><span class="time">13:00</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.dcnr.pa.gov/StateParks/FindAPark/LeonardHarrisonStatePark/" target="_blank" rel="noopener">Leonard Harrison State Park</a> — breathtaking overlook of Pine Creek Gorge, the "PA Grand Canyon." Skip the steep Turkey Path; short, flat overlook walk instead. Free entry/parking.</span></li>
+          <li><span class="time">14:00</span><span class="desc"><span class="tag">Plan</span> Lunch 10–15 min away in <a href="https://en.wikipedia.org/wiki/Wellsboro,_Pennsylvania" target="_blank" rel="noopener">Wellsboro</a> — classic 19th-century small-town feel, gaslit Main Street. Try <a href="https://timelessdestination.com/" target="_blank" rel="noopener">Timeless Destination</a> (Italian/American) or <a href="https://www.facebook.com/HarlandsRestaurant/" target="_blank" rel="noopener">Harland's Family Style Restaurant</a> (quick, cheap).</span></li>
+          <li><span class="time">15:00</span><span class="desc"><span class="tag">Plan</span> Drive to Lancaster, arrive ~18:30.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 8 ============ -->
+    <details class="panel" id="day8">
+      <summary><span class="day-title">Day 8 — Fri Sep 25 · Amish Country → Washington DC</span><span class="day-sub">Sleeping: Washington, DC (1 of 2)</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">9:30–12:30</span><span class="desc"><span class="tag">Plan</span> <a href="https://amishfarmandhouse.com/tours/" target="_blank" rel="noopener">The Amish Farm and House</a> bus + farm tour — classic tour ~$28.95/person (~2–3 hrs), premium incl. 1805 farmhouse ~$36.95/person (~3–4 hrs). Arrive 30 min early; some Amish vendors are cash-only. Tours depart 11:00/13:00/15:00.</span></li>
+          <li><span class="time">—</span><span class="desc">Considered: <a href="https://amishexperience.com/vip-tour/" target="_blank" rel="noopener">Amish Experience VIP Tour</a> (private, up to 14 people, ~3.5 hrs, ~$100 more per family) — dropped, only runs at 17:00.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Drive between the farms/villages of Birds in Hand, Intercourse, Ronks, Strasburg — horse-drawn buggies alongside the road.</span></li>
+          <li><span class="time">Midday</span><span class="desc"><span class="tag">Plan</span> Shopping at <a href="https://www.tangeroutlet.com/lancaster" target="_blank" rel="noopener">Tanger Outlets Lancaster</a>.</span></li>
+          <li><span class="time">17:00</span><span class="desc"><span class="tag">Plan</span> Drive Lancaster → Washington DC (~120 mi, 2.5–3 hrs).</span></li>
+          <li><span class="time">20:30</span><span class="desc"><span class="tag">Plan</span> Check in; dinner in <a href="https://www.georgetowndc.com/" target="_blank" rel="noopener">Georgetown</a>; evening walk past the illuminated monuments.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 9 ============ -->
+    <details class="panel" id="day9">
+      <summary><span class="day-title">Day 9 — Sat Sep 26 · Washington DC &amp; museums</span><span class="day-sub">Sleeping: Washington, DC (2 of 2)</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <div class="callout">Not driving a private car around the National Mall on a Saturday — parking is scarce and expensive; leave the car at the hotel and use the Metro or taxis.</div>
+        <ul class="timeline-list">
+          <li><span class="time">10:00</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.visitthecapitol.gov/" target="_blank" rel="noopener">Capitol Hill</a>.</span></li>
+          <li><span class="time">11:00</span><span class="desc"><span class="tag">Plan</span> <a href="https://naturalhistory.si.edu/" target="_blank" rel="noopener">National Museum of Natural History</a> (~2 hrs) — no advance booking, security-line order; arrive early.</span></li>
+          <li><span class="time">13:00</span><span class="desc"><span class="tag">Plan</span> Lunch.</span></li>
+          <li><span class="time">14:00</span><span class="desc"><span class="tag">Plan</span> <a href="https://airandspace.si.edu/visit/museum-dc" target="_blank" rel="noopener">National Air and Space Museum</a> (~2.25 hrs) — 5 tickets already reserved.</span></li>
+          <li><span class="time">16:30</span><span class="desc"><span class="tag">Plan</span> View of the <a href="https://www.whitehouse.gov/about-the-white-house/tours-events/" target="_blank" rel="noopener">White House</a>; family photo. <a href="https://www.nps.gov/nama/" target="_blank" rel="noopener">National Mall</a>: Washington Monument → WWII Memorial → Reflecting Pool → Vietnam &amp; Korean War Memorials → finish at the illuminated Lincoln Memorial.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Free entry to <a href="https://www.si.edu/museums" target="_blank" rel="noopener">Smithsonian museums</a> — reserve a free timed ticket in advance where required.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag warn">Optional</span> <a href="https://www.spymuseum.org/" target="_blank" rel="noopener">International Spy Museum</a> (paid).</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 10 ============ -->
+    <details class="panel" id="day10">
+      <summary><span class="day-title">Day 10 — Sun Sep 27 · Philadelphia</span><span class="day-sub">Sleeping: Atlantic City, NJ (1 of 2)</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Drive DC → Philadelphia (~2.5–3 hrs).</span></li>
+          <li><span class="time">12:00</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.nps.gov/inde/" target="_blank" rel="noopener">Liberty Bell</a>, Independence Hall, Congress Hall / President's House (Independence National Historical Park).</span></li>
+          <li><span class="time">Lunch</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.readingterminalmarket.org/" target="_blank" rel="noopener">Reading Terminal Market</a>.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Franklin Court, <a href="https://www.elfrethsalley.org/" target="_blank" rel="noopener">Elfreth's Alley</a>, Old City.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> The "Rocky Steps" at the <a href="https://www.philamuseum.org/" target="_blank" rel="noopener">Philadelphia Museum of Art</a>.</span></li>
+          <li><span class="time">17:00</span><span class="desc"><span class="tag">Plan</span> Drive to Atlantic City (~1.5 hrs) → check in, boardwalk, casino.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 11 ============ -->
+    <details class="panel" id="day11">
+      <summary><span class="day-title">Day 11 — Mon Sep 28 · Atlantic City</span><span class="day-sub">Sleeping: Atlantic City, NJ (2 of 2)</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">Day</span><span class="desc"><span class="tag">Plan</span> Beach, pool, shopping at <a href="https://www.tangeroutlet.com/atlanticcity" target="_blank" rel="noopener">Tanger Outlets Atlantic City</a> (no sales tax on clothes/shoes in NJ).</span></li>
+          <li><span class="time">Evening</span><span class="desc"><span class="tag">Plan</span> A show.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 12-13 ============ -->
+    <details class="panel" id="day12-13">
+      <summary><span class="day-title">Day 12–13 — Tue–Wed Sep 29–30 · New Jersey</span><span class="day-sub">Sleeping: New Jersey (2 nights)</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Drive to New Jersey (~2–2.5 hrs).</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.simon.com/mall/the-mills-at-jersey-gardens" target="_blank" rel="noopener">The Mills at Jersey Gardens</a> — huge indoor outlet mall near Newark.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.americandream.com/" target="_blank" rel="noopener">American Dream</a> — indoor water park, ice skating, Nickelodeon Universe rollercoasters.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.sixflags.com/greatadventure" target="_blank" rel="noopener">Six Flags Great Adventure</a> — rollercoasters.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> <a href="https://www.premiumoutlets.com/outlet/woodbury-common" target="_blank" rel="noopener">Woodbury Common Premium Outlets</a>.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Optional quick trip into Manhattan (20–30 min by train/bus).</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Target / Kohl's in Secaucus; evening at the Harmon Meadow complex.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Laundry; pick up melatonin.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ============ DAY 14-15 ============ -->
+    <details class="panel" id="day14-15">
+      <summary><span class="day-title">Day 14–15 — Thu–Fri Oct 1–2 · Flight home</span><span class="day-sub">In flight / arrive Tel Aviv</span><span class="chev">▸</span></summary>
+      <div class="day-body">
+        <ul class="timeline-list">
+          <li><span class="time">11:30</span><span class="desc"><span class="tag">Plan</span> Arrive <a href="https://www.newarkairport.com/to-from-airport/rental-cars" target="_blank" rel="noopener">Newark Airport Rental Car Center</a> (Waze: "Newark Airport Rental Car Center" / Station P3). Fuel up 5–10km before the airport (US-1/9 or I‑95) — airport/agency refueling is much pricier.</span></li>
+          <li><span class="time">—</span><span class="desc"><span class="tag">Plan</span> Return car at Terminal A Parking Garage, then AirTrain (or 5-min shuttle) to Terminal A if departing from B/C.</span></li>
+          <li><span class="time">15:25</span><span class="desc"><span class="tag">Plan</span> Depart EWR, UA84.</span></li>
+          <li><span class="time">8:55</span><span class="desc"><span class="tag">Plan</span> Land Tel Aviv (TLV), Fri Oct 2.</span></li>
+        </ul>
+      </div>
+    </details>
+
+    <section id="optional">
+      <h2>Optional NYC ideas — not yet decided</h2>
+      <p class="section-sub">
+        From the family's new candidate list (<a href="https://github.com/avisalmon/arhab/blob/main/docs/nyc-proposals.md" target="_blank" rel="noopener">full doc</a>).
+        Nothing here has a fixed day yet — most would slot into whichever
+        NYC day (1–4) has room, alongside the confirmed plan above.
+      </p>
       <div class="table-wrap">
         <table>
-          <thead>
-            <tr><th>Time</th><th>What</th></tr>
-          </thead>
+          <thead><tr><th>Idea</th><th>Notes</th></tr></thead>
           <tbody>
-            <tr><td><em>Morning</em></td><td>Breakfast / check out (on travel days) / first activity</td></tr>
-            <tr><td><em>Midday</em></td><td>Drive leg or main activity / lunch stop</td></tr>
-            <tr><td><em>Afternoon</em></td><td>Second activity / sightseeing / check in to next stay</td></tr>
-            <tr><td><em>Evening</em></td><td>Dinner / rest</td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://www.intrepidmuseum.org/" target="_blank" rel="noopener">Intrepid Sea, Air &amp; Space Museum</a></td><td>High priority</td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://mercerlabs.com/" target="_blank" rel="noopener">Mercer Labs</a></td><td>Immersive art &amp; technology museum, Lower Manhattan</td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://momath.org/" target="_blank" rel="noopener">National Museum of Mathematics (MoMath)</a></td><td></td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://www.meowparlour.com/" target="_blank" rel="noopener">Meow Parlour</a> cat café</td><td>~$23, 50 min, reserve ahead — <a href="https://www.meowparlour.com/reservation" target="_blank" rel="noopener">book here</a></td></tr>
+            <tr><td><span class="tag warn">Optional</span> Jazz club: <a href="https://villagevanguard.com/" target="_blank" rel="noopener">Village Vanguard</a> / <a href="https://www.smallslive.com/" target="_blank" rel="noopener">Smalls</a></td><td></td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://sangennaronyc.org/" target="_blank" rel="noopener">Feast of San Gennaro</a></td><td>Confirmed dates: Sep 17–27, 2026 — overlaps our whole NYC stay. "Definitely" per the list.</td></tr>
+            <tr><td><span class="tag warn">Optional</span> Sunset sail around Manhattan</td><td>e.g. <a href="https://sail-nyc.com/sunset-cruises-in-nyc/" target="_blank" rel="noopener">Classic Harbor Line</a> or <a href="https://manhattanbysail.com/shearwater/sunset-sail/" target="_blank" rel="noopener">Manhattan by Sail</a></td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://www.edgenyc.com/city-climb/" target="_blank" rel="noopener">City Climb</a> at Edge</td><td>Extreme; ~$185/person. Confirm it's running in season for our dates.</td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://www.moma.org/" target="_blank" rel="noopener">MoMA</a></td><td>Main art option — already noted on Day 4</td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://whitney.org/" target="_blank" rel="noopener">Whitney Museum</a></td><td>Lower priority than MoMA</td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://www.bhphotovideo.com/" target="_blank" rel="noopener">B&amp;H Photo</a></td><td>Must-do per the list — <strong>closed Saturdays</strong></td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://www.nintendo.com/us/store/locations/newyork/" target="_blank" rel="noopener">Nintendo New York</a> / Apple Fifth Ave</td><td>Easy adds while on 5th Ave (Day 2)</td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://www.nfl.com/schedules/2026/by-team/new-york-jets" target="_blank" rel="noopener">Packers @ Jets</a> (NFL)</td><td>Confirmed: Sun Sep 20, 1:00pm, MetLife Stadium — see the Day 3 decision above</td></tr>
+            <tr><td><span class="tag warn">Optional</span> <a href="https://centralperk.com/" target="_blank" rel="noopener">Central Perk</a> coffeehouse</td><td>Now a permanent café at 7th Ave &amp; 47th St, Times Square (walkable from the hotel)</td></tr>
           </tbody>
         </table>
       </div>
       <div class="callout">
-        Once real days are added, each day can get its own detailed timeline
-        (specific times, addresses, reservation confirmations) either inline
-        here or split into per-day sections if the list gets long.
+        <strong>Rejected / low priority</strong> (from the family list, not on this page): Coney Island,
+        Statue of Liberty crown/pedestal, classical concert, Adorama, Museum of Ice Cream, SPYSCAPE, RiseNY, generic VR/immersive gaming.
+        NBA — not relevant.
       </div>
     </section>
 

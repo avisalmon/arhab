@@ -30,6 +30,17 @@ editing a page:
 - Test new pages by mentally checking (or actually resizing) at ~375px
   width before considering a page done.
 
+## GitHub Pages: Jekyll is disabled
+
+There's a `.nojekyll` file at the repo root. This is a hand-authored static
+HTML/CSS site, not a Jekyll site — without `.nojekyll`, GitHub Pages runs
+Jekyll by default, which converts every `.md` file to `.html` (breaking
+direct links to files like `docs/source-trip-notes.md`) and can otherwise
+reprocess files unexpectedly. Keep `.nojekyll` in place. Markdown docs under
+`docs/` are linked from site pages via their **GitHub blob URL**
+(`https://github.com/avisalmon/arhab/blob/main/docs/<file>.md`), not a
+relative path — that's what actually renders them.
+
 ## Structure
 
 - `index.html` — home/menu hub (repo root, required by GitHub Pages)

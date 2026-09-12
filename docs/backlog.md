@@ -4,15 +4,14 @@
 - [x] Repo scaffold, GitHub Pages-ready structure
 - [x] Home page skeleton with nav + card grid
 - [x] Car Rental page — first real research content
-- [x] Daily Plan page skeleton (overview, main schedule, basic timeline) —
-      sample/placeholder rows only
-- [ ] Confirmed: Google Doc / My Map are not fetchable (auth-gated, no
-      Drive/Docs MCP connector available) — ground-truth workflow instead:
-      Avi exports the doc to `docs/source-trip-notes.txt`, drops it in the
-      repo, Claude reads it from there. See `CLAUDE.md`.
-- [ ] Waiting on `docs/source-trip-notes.txt` to sync real trip details
-      (group size, route, dates, sleeping arrangements) into Daily Plan,
-      Navigation, and Car Rental
+- [x] Ground-truth sync mechanism working: docx export → `scripts/docx_to_md.py`
+      → `docs/source-trip-notes.md`. See `CLAUDE.md`.
+- [x] Daily Plan page — full real 15-day schedule (overview, sleeping table,
+      collapsible day-by-day timeline), every item from the reference doc
+      marked Plan, every candidate-list item marked Optional, everything
+      linked to a real source
+- [x] NYC candidate-list proposal synced in (`docs/nyc-proposals.md`) and
+      cross-linked from Daily Plan
 
 ## Open decisions
 - [ ] NYC Sep 20: keep Downtown/Brooklyn day, or swap for Packers @ Jets NFL
