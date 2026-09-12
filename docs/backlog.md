@@ -14,6 +14,10 @@
       (group size, route, dates, sleeping arrangements) into Daily Plan,
       Navigation, and Car Rental
 
+## Open decisions
+- [ ] NYC Sep 20: keep Downtown/Brooklyn day, or swap for Packers @ Jets NFL
+      game? See `docs/nyc-proposals.md` — pending family decision.
+
 ## Next
 - [ ] Once source file lands: replace Daily Plan sample rows with the real
       schedule (dates, cities, overnight stops)
