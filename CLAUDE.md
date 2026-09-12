@@ -52,18 +52,33 @@ editing a page:
 ### Ground-truth sync workflow (the trip notes doc is source of truth)
 
 Avi's Google Doc is the group's ground truth for trip details (group size,
-route, dates, sleeping arrangements, etc.). Since it can't be pulled live:
+route, dates, sleeping arrangements, etc. — written in Hebrew). Since it
+can't be pulled live, the flow is export → convert → sync:
 
-1. Avi exports it from Google Docs: **File → Download → Plain text (.txt)**
-   (or .docx/.html).
-2. He drops it in this repo at **`docs/source-trip-notes.txt`** (overwriting
-   the previous export when the doc changes).
-3. Read that file directly and use it to update the relevant site pages
-   (Daily Plan, Navigation, Car Rental, etc.) — treat it as the authoritative
-   source over anything already written on the pages.
-4. If `docs/source-trip-notes.txt` looks stale (site pages reference details
-   not in it, or Avi mentions the doc changed), ask him to re-export it
-   rather than guessing or re-attempting a live fetch.
+1. Avi exports it from Google Docs as **.docx** (File → Download → Microsoft
+   Word (.docx)) and drops/overwrites it at **`docs/source-trip-notes.docx`**.
+2. Convert it to Markdown with the project's `env` virtualenv:
+   `.\env\Scripts\python.exe scripts\docx_to_md.py docs\source-trip-notes.docx docs\source-trip-notes.md`
+   This walks the doc body in order (paragraphs + tables interleaved, not
+   python-docx's default separated collections) so the output reads the same
+   order as the original doc. `docs/source-trip-notes.md` is generated —
+   don't hand-edit it beyond the one-off header cleanup already done; re-run
+   the script after every re-export instead.
+3. Read `docs/source-trip-notes.md` and use it to update the relevant site
+   pages (Daily Plan, Navigation, Car Rental, etc.) — it is the authoritative
+   source, in Hebrew; keep names/places/times faithful to it and translate
+   only what's needed for page structure, not the substance.
+4. If the site pages reference details not in the current
+   `docs/source-trip-notes.md`, or Avi mentions the doc changed, ask him to
+   re-export rather than guessing or re-attempting a live fetch.
+
+Current trip shape (from the first sync, 2026-09-18 → 2026-10-02): family of
+5 (Nirit, Avi + sons), flights UA85 (EWR arrival) / UA84 (EWR departure),
+route NYC (4 nights Manhattan) → Finger Lakes (Geneva) → Niagara Falls
+(Canadian side) → Leonard Harrison SP / Lancaster → Amish + DC (2 nights) →
+Philadelphia + Atlantic City (2 nights) → New Jersey (2 nights) → fly home.
+Treat this summary as a quick orientation only — always defer to the current
+`docs/source-trip-notes.md` for exact details.
 
 ## Python standing rules (from global CLAUDE.md, apply if any scripts are added)
 
